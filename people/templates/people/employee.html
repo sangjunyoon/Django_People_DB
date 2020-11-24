@@ -1,0 +1,40 @@
+{% extends 'people/nav_bar.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Database</title>
+</head>
+<body>
+  <h1>Employee DB</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">NT ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Department</th>
+        <th scope="col">Position</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in Employee_List %}
+      <tr>
+        <th scope="row">{{ i.id }}</th>
+        <td>{{ i.nt_id }}</td>
+        <td>{{ i.first_name }}</td>
+        <td>{{ i.last_name }}</td>
+        <td>{{ i.email }}</td>
+        <td>{{ i.department }}</td>
+        <td>{{ i.position }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</body>
+  {% endblock %}

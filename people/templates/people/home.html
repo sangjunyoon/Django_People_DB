@@ -1,0 +1,20 @@
+{% extends 'people/nav_bar.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>Home</h1>
+<ol>
+    <li><a class="btn btn-primary" href="{% url 'people:database' %}">Database</a></li>
+</ol>
+
+</body>
+</html>
+
+{% endblock %}

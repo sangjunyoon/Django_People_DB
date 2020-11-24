@@ -1,0 +1,21 @@
+{% extends 'people/nav_bar.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database</title>
+</head>
+
+<body>
+    <h1>Database</h1>
+<ol>
+    <li><a class="btn btn-primary" href="{% url 'people:employee' %}">Employee</a></li>
+    <li><a class="btn btn-primary" href="{% url 'people:user' %}">User</a></li>
+</ol>
+
+</body>
+</html>
+
+{% endblock %}
